@@ -103,6 +103,8 @@ document.querySelectorAll("js-delete-link").forEach((link) => {
 
     removeFromCart(productId);
 
-    
+    //remove from page
+    const cartItemContainer = link.closest(".cart-item-container");
+    cartItemContainer.remove();
   });
 });
